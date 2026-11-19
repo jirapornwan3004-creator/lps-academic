@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ระบบวิชาการ</title>
+<meta name="apple-mobile-web-app-title" content="ระบบวิชาการ">
+<meta name="theme-color" content="#3730a3">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" href="icon.png">
+<style>body{margin:0;font-family:-apple-system,"Segoe UI",Sarabun,sans-serif;background:linear-gradient(160deg,#312e81,#6d28d9);min-height:100vh;display:flex;align-items:center;justify-content:center;color:#fff}.c{text-align:center;padding:24px;max-width:360px;width:100%}img{width:96px;height:96px;object-fit:contain;background:#fff;border-radius:24px;padding:8px}h1{font-size:22px;margin:14px 0 4px}p{opacity:.85;margin:0 0 22px;font-size:14px}a.b{display:block;background:#fff;color:#312e81;text-decoration:none;font-weight:700;padding:14px;border-radius:14px;margin:10px 0;font-size:16px}a.b small{display:block;font-weight:400;color:#64748b;font-size:12px}#tip{display:none;background:rgba(255,255,255,.14);border-radius:14px;padding:12px;font-size:13px;line-height:1.6;text-align:left;margin-top:16px}#ch{color:#e0e7ff;font-size:13px;margin-top:14px;display:inline-block}</style></head><body><div class="c">
+<img src="icon.png" alt=""><h1>ระบบวิชาการ</h1><p>โรงเรียนลำทะเมนไชยพิทยาคม</p>
+<a class="b" id="t" href="https://script.google.com/a/ndlp.go.th/macros/s/AKfycbxMpG_GTkmwKuAGIMyH_wUZ9HfHw22JIKJ7hQmvVxMPd_Cs8JgJXLg7hIZCzbfqbq2K/exec">ครูและบุคลากร<small>เข้าด้วยบัญชี @ndlp.go.th,lps.ac.th</small></a>
+<a class="b" id="s" href="https://script.google.com/macros/s/AKfycbxMpG_GTkmwKuAGIMyH_wUZ9HfHw22JIKJ7hQmvVxMPd_Cs8JgJXLg7hIZCzbfqbq2K/exec">นักเรียน · เข้าด้วยรหัสผ่าน<small>เลขประจำตัวนักเรียน / ชื่อผู้ใช้</small></a>
+<div id="tip"><b>เพิ่มไว้ที่หน้าจอ (ไอคอนโลโก้โรงเรียน)</b><br>iPhone: เปิดหน้านี้ด้วย Safari → แตะ <b>แชร์</b> → <b>เพิ่มไปยังหน้าจอโฮม</b><br>Android: Chrome → <b>⋮</b> → <b>เพิ่มลงในหน้าจอหลัก</b><br>แตะปุ่มด้านบนเลือกประเภทผู้ใช้ 1 ครั้ง ครั้งต่อไปแตะไอคอนแล้วเข้าระบบได้ทันที</div>
+<a id="ch" href="?choose=1">เปลี่ยนประเภทผู้ใช้</a></div>
+<script>(function(){var q=new URLSearchParams(location.search),k="appRole",r=q.get("role"),go=q.get("go");function get(){try{return localStorage.getItem(k)}catch(e){return null}}function set(v){try{localStorage.setItem(k,v)}catch(e){}}if(q.get("choose")){try{localStorage.removeItem(k)}catch(e){}}if(r==="teacher"||r==="student")set(r);try{history.replaceState(null,"","?go=1")}catch(e){}document.getElementById("t").onclick=function(){set("teacher")};document.getElementById("s").onclick=function(){set("student")};var v=get();if(go&&v){location.replace(document.getElementById(v==="teacher"?"t":"s").href);return;}document.getElementById("tip").style.display=go?"none":"block";})();</script></body></html>
